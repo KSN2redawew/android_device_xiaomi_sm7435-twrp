@@ -20,7 +20,7 @@ git clone --depth=1 https://github.com/KSN2redawew/android_device_xiaomi_dizi-tw
 ```shell
 source build/envsetup.sh
 lunch twrp_dizi-eng
-m vendorbootimage
+m recoveryimage
 ```
 
 If there is no error, recovery.img will be found in `out/target/product/dizi/recovery.img`
