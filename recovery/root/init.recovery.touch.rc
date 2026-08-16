@@ -1,0 +1,8 @@
+on early-init
+    # Load touch-related modules
+    insmod vendor_dlkm/lib/modules/nt36532_spi.ko
+    insmod vendor_dlkm/lib/modules/xiaomi_touch.ko
+    insmod vendor_dlkm/lib/modules/lct_tp.ko
+    insmod vendor_dlkm/lib/modules/panel_event_notifier.ko
+	insmod vendor_dlkm/lib/modules/leds-qpnp-vibrator-ldo.ko
+	insmod vendor_dlkm/lib/modules/swr_haptics_dlkm.ko
