@@ -31,6 +31,9 @@ on init
     write /sys/fs/selinux/checkreqprot 0
 
 on early-init
+	write /sys/fs/selinux/enforce 0
+
+on early-init
     start vendor.gatekeeper_default
 
 service post-boot-script /system/bin/sh -c /vendor/bin/init.kernel.post_boot-parrot.sh

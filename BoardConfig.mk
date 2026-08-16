@@ -32,7 +32,7 @@ TARGET_KERNEL_HEADER_ARCH     := arm64
 BOARD_KERNEL_IMAGE_NAME       := Image
 BOARD_BOOT_HEADER_VERSION     := 4
 BOARD_KERNEL_PAGESIZE         := 4096
-TARGET_PREBUILT_KERNEL  	  := $(DEVICE_PATH)/prebuilt/kernel
+TARGET_PREBUILT_KERNEL        := $(DEVICE_PATH)/prebuilt/kernel
 BOARD_MKBOOTIMG_ARGS          += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS          += --pagesize $(BOARD_KERNEL_PAGESIZE)
 
@@ -68,7 +68,7 @@ BOARD_SUPER_PARTITION_SIZE := 18907922432
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 18903728128
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
-	system system_ext product vendor vendor_dlkm odm system_dlkm mi_ext
+	system system_ext product vendor vendor_dlkm odm
 
 BOARD_PARTITION_LIST := $(call to-upper, $(BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST))
 $(foreach p, $(BOARD_PARTITION_LIST), $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := erofs))
@@ -116,10 +116,8 @@ TW_FRAMERATE := 120
 TW_MAX_BRIGHTNESS := 4095
 TW_NO_SCREEN_BLANK := true
 TW_SCREEN_BLANK_ON_BOOT := false
-TW_NO_HAPTICS := false
 TW_USE_QCOM_HAPTICS_VIBRATOR := true
 TW_USE_LEDS_HAPTICS := true
-TW_THEME := landscape_hdpi
 
 # TWRP file system
 RECOVERY_SDCARD_ON_DATA := true
@@ -162,3 +160,12 @@ TW_INCLUDE_LIBRESETPROP := true
 TW_ENABLE_ALL_PARTITION_TOOLS := true
 
 TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
+
+# vibro
+TW_VIBRATOR_PATH := /sys/class/leds/vibrator/activate
+
+# GUI
+TW_THEME := portrait_hdpi
+TARGET_SCREEN_WIDTH := 1600
+TARGET_SCREEN_HEIGHT := 2560
+TW_ROTATION := 0
