@@ -1,9 +1,13 @@
-# TWRP device tree for Redmi Pad PRO / 5G
+# TWRP device tree for XIAOMI SM7435
 
 ## Thanks
 [vildangil](https://github.com/vildangil) test twrp
 
 Gaurav test twrp on ruan
+## Supported devices
+- Redmi Pad Pro / Poco Pad (dizi)
+- Redmi Pad Pro 5G / Poco Pad 5G (ruan) 
+
 ## Build it yourself?
 
 ```shell
