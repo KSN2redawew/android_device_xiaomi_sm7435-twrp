@@ -32,11 +32,11 @@ Works:
 - [X] ADB
 - [X] Display
 - [X] Decryption
-- [NO] Fasbootd 
+- [X] Fasbootd 
 - [X] Flashing
 - [X] MTP
 - [X] Sideload 
-- [NO] USB OTG
+- [NO] USB OTG (maybe fixed soon)
 - [X] Touchscreen
 
 ## To use it:
