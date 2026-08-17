@@ -32,7 +32,7 @@ Works:
 - [X] ADB
 - [X] Display
 - [X] Decryption
-- [X] Fasbootd 
+- [NO] Fasbootd 
 - [X] Flashing
 - [X] MTP
 - [X] Sideload 
